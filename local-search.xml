@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>一道不那么简单的证明题</title>
+    <link href="/2024/01/12/%E4%B8%80%E9%81%93%E4%B8%8D%E9%82%A3%E4%B9%88%E7%AE%80%E5%8D%95%E7%9A%84%E8%AF%81%E6%98%8E%E9%A2%98/"/>
+    <url>/2024/01/12/%E4%B8%80%E9%81%93%E4%B8%8D%E9%82%A3%E4%B9%88%E7%AE%80%E5%8D%95%E7%9A%84%E8%AF%81%E6%98%8E%E9%A2%98/</url>
+    
+    <content type="html"><![CDATA[<h3 id="题目">题目</h3><p>设<spanclass="math inline">\(f(x)\)</span>在区间[0,1]上连续可微，满足<spanclass="math inline">\(0&lt;f&#39;(x)\leq1\)</span>,任给<spanclass="math inline">\(x\in[0,1]\)</span>且<spanclass="math inline">\(f(0)=0\)</span>，试证： <spanclass="math display">\[\int_0^1\left(f\left(x\right)\right)^3\mathrm{d}x\leq\left(\int_0^1f(x)\mathrm{d}x\right)^2\]</span></p><h3 id="解答">解答</h3><p><strong>证明：</strong></p><p>由<span class="math inline">\(0&lt;f&#39;(x)\leq 1\)</span>知： <spanclass="math display">\[0&lt;\frac{f(x)-f(0)}{x-0}=f&#39;(\xi_1)\leq 1\]</span> 因此： <span class="math display">\[0&lt;f(x)\leq x\]</span> 那么 <span class="math display">\[2f(t)\cdot f&#39;(t)\leq2f(t)\]</span> 又 <span class="math display">\[\frac{f^2(x)-2\int^x_0f(t)\mathrm{d}t}{x}=2f(x)f&#39;(\xi_2)-2f(\xi_2)\leq 0\]</span> 于是有 <span class="math display">\[f^2(x)\leq 2\int^x_0f(t)\mathrm{d}t\]</span> 易得 <span class="math display">\[f^3(x)\leq2f(x)\int^x_0f(t)\mathrm{d}t\]</span> 由于 <span class="math display">\[\frac{\int^x_0f^3(t)\mathrm{d}t-\left[\int^x_0f(t)\mathrm{d}t\right]^2}{x}=f^3f(\xi_3)-2f(\xi_3)\int^x_0f(t)\mathrm{d}t\leq0\]</span> 故 <span class="math display">\[\int^x_0f^3(t)\mathrm{d}t\leq\left[\int^x_0f(t)\mathrm{d}t\right]^2,\quad \forall x\in[0,1]\]</span> 当我们取<spanclass="math inline">\(x=1\)</span>时，题目得证。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>数学</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>随笔</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>测试文章</title>
     <link href="/2024/01/12/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/"/>
     <url>/2024/01/12/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
