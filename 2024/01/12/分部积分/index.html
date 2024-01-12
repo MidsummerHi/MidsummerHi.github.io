@@ -16,22 +16,22 @@
   <meta name="author" content="Midsummer">
   <meta name="keywords" content="">
   
-    <meta name="description" content="题目 设\(f(x)\)在区间[0,1]上连续可微，满足\(0&lt;f&#39;(x)\leq1\),任给\(x\in[0,1]\)且\(f(0)&#x3D;0\)，试证： \[ \int_0^1\left(f\left(x\right)\right)^3\mathrm{d}x\leq\left(\int_0^1f(x)\mathrm{d}x\right)^2 \] 解答 证明： 由\(0&amp;l">
+    <meta name="description" content="一、分部积分的基本形式 分部积分法是微积分中的一个技巧，用于求解不定积分，特别适用于具有乘积形式的函数。分部积分法的公式表达为： \[ \int u\mathrm{d}v &#x3D; uv - \int v  \mathrm{d}u \] 其中，\(u\)和 \(\mathrm{d}v\) 是待积函数的两个部分，\(u\)通常是一个可导函数，\(\mathrm{d}v\) 则是可积的函数。通过这">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一道不那么简单的证明题">
-<meta property="og:url" content="http://example.com/2024/01/12/%E4%B8%80%E9%81%93%E4%B8%8D%E9%82%A3%E4%B9%88%E7%AE%80%E5%8D%95%E7%9A%84%E8%AF%81%E6%98%8E%E9%A2%98/index.html">
+<meta property="og:title" content="分部积分">
+<meta property="og:url" content="http://example.com/2024/01/12/%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86/index.html">
 <meta property="og:site_name" content="Midsummer">
-<meta property="og:description" content="题目 设\(f(x)\)在区间[0,1]上连续可微，满足\(0&lt;f&#39;(x)\leq1\),任给\(x\in[0,1]\)且\(f(0)&#x3D;0\)，试证： \[ \int_0^1\left(f\left(x\right)\right)^3\mathrm{d}x\leq\left(\int_0^1f(x)\mathrm{d}x\right)^2 \] 解答 证明： 由\(0&amp;l">
+<meta property="og:description" content="一、分部积分的基本形式 分部积分法是微积分中的一个技巧，用于求解不定积分，特别适用于具有乘积形式的函数。分部积分法的公式表达为： \[ \int u\mathrm{d}v &#x3D; uv - \int v  \mathrm{d}u \] 其中，\(u\)和 \(\mathrm{d}v\) 是待积函数的两个部分，\(u\)通常是一个可导函数，\(\mathrm{d}v\) 则是可积的函数。通过这">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-01-12T10:41:20.000Z">
-<meta property="article:modified_time" content="2024-01-12T10:45:43.313Z">
+<meta property="article:published_time" content="2024-01-12T10:46:30.000Z">
+<meta property="article:modified_time" content="2024-01-12T10:58:07.469Z">
 <meta property="article:author" content="Midsummer">
-<meta property="article:tag" content="随笔">
+<meta property="article:tag" content="数学">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>一道不那么简单的证明题 - Midsummer</title>
+  <title>分部积分 - Midsummer</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -226,7 +226,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="一道不那么简单的证明题"></span>
+            <span id="subtitle" data-typed-text="分部积分"></span>
           
         </div>
 
@@ -237,7 +237,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-01-12 18:41" pubdate>
+        <time datetime="2024-01-12 18:46" pubdate>
           2024年1月12日 晚上
         </time>
       </span>
@@ -249,7 +249,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          211 字
+          1k 字
         
       </span>
     
@@ -260,7 +260,7 @@
         
         
         
-          2 分钟
+          9 分钟
         
       </span>
     
@@ -305,45 +305,80 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">一道不那么简单的证明题</h1>
+            <h1 id="seo-header">分部积分</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="题目">题目</h3>
-<p>设<span
-class="math inline">\(f(x)\)</span>在区间[0,1]上连续可微，满足<span
-class="math inline">\(0&lt;f&#39;(x)\leq1\)</span>,任给<span
-class="math inline">\(x\in[0,1]\)</span>且<span
-class="math inline">\(f(0)=0\)</span>，试证： <span
-class="math display">\[
-\int_0^1\left(f\left(x\right)\right)^3\mathrm{d}x\leq\left(\int_0^1f(x)\mathrm{d}x\right)^2
+                <h2 id="一分部积分的基本形式">一、分部积分的基本形式</h2>
+<p>分部积分法是微积分中的一个技巧，用于求解不定积分，特别适用于具有乘积形式的函数。分部积分法的公式表达为：
+<span class="math display">\[
+\int u\mathrm{d}v = uv - \int v  \mathrm{d}u
+\]</span> 其中，<span class="math inline">\(u\)</span>和 <span
+class="math inline">\(\mathrm{d}v\)</span> 是待积函数的两个部分，<span
+class="math inline">\(u\)</span>通常是一个可导函数，<span
+class="math inline">\(\mathrm{d}v\)</span>
+则是可积的函数。通过这个公式，可以将一个较复杂的积分问题转化为两个相对简单的积分问题。</p>
+<p>下面总结分部积分法的步骤以及一些常见的分部积分形式：</p>
+<h2 id="二分部积分法步骤">二、分部积分法步骤：</h2>
+<h3 id="选择u和-mathrmdv">1.<strong>选择<span
+class="math inline">\(u\)</span>和 <span
+class="math inline">\(\mathrm{d}v\)</span> :</strong></h3>
+<p>选择<span class="math inline">\(u\)</span>和 <span
+class="math inline">\(\mathrm{d}v\)</span> ，通常选择 <span
+class="math inline">\(u\)</span>为可导函数， <span
+class="math inline">\(\mathrm{d}v\)</span> 为可积函数。</p>
+<h3 id="应用分部积分公式">2.<strong>应用分部积分公式：</strong></h3>
+<p><span class="math display">\[
+\int u \mathrm{d}v = uv - \int v  \mathrm{d}u
 \]</span></p>
-<h3 id="解答">解答</h3>
-<p><strong>证明：</strong></p>
-<p>由<span class="math inline">\(0&lt;f&#39;(x)\leq 1\)</span>知： <span
-class="math display">\[
-0&lt;\frac{f(x)-f(0)}{x-0}=f&#39;(\xi_1)\leq 1
-\]</span> 因此： <span class="math display">\[
-0&lt;f(x)\leq x
-\]</span> 那么 <span class="math display">\[
-2f(t)\cdot f&#39;(t)\leq2f(t)
-\]</span> 又 <span class="math display">\[
-\frac{f^2(x)-2\int
-^x_0f(t)\mathrm{d}t}{x}=2f(x)f&#39;(\xi_2)-2f(\xi_2)\leq 0
-\]</span> 于是有 <span class="math display">\[
-f^2(x)\leq 2\int^x_0f(t)\mathrm{d}t
-\]</span> 易得 <span class="math display">\[
-f^3(x)\leq2f(x)\int^x_0f(t)\mathrm{d}t
-\]</span> 由于 <span class="math display">\[
-\frac{\int^x_0f^3(t)\mathrm{d}t-\left[\int
-^x_0f(t)\mathrm{d}t\right]^2}{x}=f^3f(\xi_3)-2f(\xi_3)\int^x_0
-f(t)\mathrm{d}t\leq0
-\]</span> 故 <span class="math display">\[
-\int^x_0f^3(t)\mathrm{d}t\leq
-\left[\int^x_0f(t)\mathrm{d}t\right]^2,\quad \forall x\in[0,1]
-\]</span> 当我们取<span
-class="math inline">\(x=1\)</span>时，题目得证。</p>
+<h3 id="化简和解决">3.<strong>化简和解决：</strong></h3>
+<p>将公式中的项进行代入，得到简化后的积分式，然后求解。需要注意的是，并不见得所有的分部积分都能一次积出结果，有可能还要将后面那一项继续应用分部积分或其他积分方法，对于复杂的积分，需要3-4次分布积分法也是有可能的。</p>
+<h2 id="三常见的分部积分形式">三、常见的分部积分形式：</h2>
+<h3 id="多项式与指数函数">1.<strong>多项式与指数函数：</strong></h3>
+<p>当一个多项式函数与一个指数函数相乘时，通常选择将指数函数进行凑微分，放到微分算子的后面：
+<span class="math display">\[
+\int x^n e^x \mathrm{d}x =\int x^n \mathrm{d} e^x  =x^n e^x - \int  e^x
+\mathrm{d}x^{n}
+\]</span></p>
+<h3 id="对数与多项式">2.<strong>对数与多项式：</strong></h3>
+<p>当一个对数函数与一个多项式相乘时，通常选择对数函数进行凑微分，放到微分算子的后面:
+<span class="math display">\[
+\int x\ln(x) \mathrm{d}x = \int x \mathrm{d}\ln(x) =x\ln(x) - \int
+x\mathrm{d}\ln(x)
+\]</span></p>
+<h3 id="三角函数">3.<strong>三角函数：</strong></h3>
+<p>当一个三角函数与另一个函数相乘时，通常选择三角函数进行凑微分，放到微分算子的后面:
+<span class="math display">\[
+\int x^2\cos(x)  \mathrm{d}x =\int x^2 \mathrm{d}
+\sin(x)=x^2\sin(x)-\int\sin(x)\mathrm{d}x^2
+\]</span></p>
+<h3 id="反三角函数">4.<strong>反三角函数：</strong></h3>
+<p>当一个反三角函数与另一个函数相乘时，通常选择反三角函数进行凑微分，放到微分算子的后面:
+<span class="math display">\[
+\int x \arctan(x) \mathrm{d}x =\frac{1}{2}\int  \arctan(x)
+\mathrm{d}x^2= \frac{1}{2}x^2\arctan(x) - \frac{1}{2}\int x^2
+\mathrm{d}\arctan(x)
+\]</span>
+这些是一些常见的分部积分形式，但实际上分部积分法可以应用于很多其他函数组合。选择哪一个函数作为<span
+class="math inline">\(u\)</span>和<span
+class="math inline">\(v\)</span>通常需要一定的技巧和经验，完成一次分部积分后，可能需要多次应用分部积分法或结合其他的积分技巧来得到最终的结果。</p>
+<p>然后上面是不定积分的分部积分，其实定积分也是一样的，只是给定了上下限，最后要求出一个值。</p>
+<h2 id="四示例">四、示例</h2>
+<p>这眼看期末了，学弟学妹们为高数的期末考试愁白了头哈哈。我看到有人对这一道题发问，我就写了一下题解。然后进一步就想到干脆做一题分部积分的教程受益大家。</p>
+<p>题目不难，可能她上课开小差咯，这个题解放在这呢，也是让基础差的同学体会一下分部积分法的操作流程。难易程度这个程度应该对于基础不太好的刚刚好都能看懂。题目和题解都在下面：
+<span class="math display">\[
+\begin{aligned}
+\int y^3e^{\frac{1}{2}y^2}dy
+&amp;=\int y^2e^{\frac{1}{2}y^2}d{\scriptstyle{\frac{1}{2}y^2}}
+=\int y^2de^{\frac{1}{2}y^2}\\
+&amp;=y^2e^{\frac{1}{2}y^2}-\int e^{\frac{1}{2}y^2}d\scriptstyle y^2\\
+&amp;=y^2e^{\frac{1}{2}y^2}-2\int
+e^{\frac{1}{2}y^2}d\scriptstyle{\frac{1}{2}y^2}\\
+&amp;=y^2e^{\frac{1}{2}y^2}-2e^{\frac{1}{2}y^2}+c\\
+&amp;=e^{\frac{1}{2}y^2}(y^2-2)+c
+\end{aligned}
+\]</span></p>
 
                 
               </div>
@@ -377,7 +412,7 @@ class="math inline">\(x=1\)</span>时，题目得证。</p>
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E9%9A%8F%E7%AC%94/" class="print-no-link">#随笔</a>
+        <a href="/tags/%E6%95%B0%E5%AD%A6/" class="print-no-link">#数学</a>
       
     </div>
   
@@ -389,8 +424,8 @@ class="math inline">\(x=1\)</span>时，题目得证。</p>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>一道不那么简单的证明题</div>
-      <div>http://example.com/2024/01/12/一道不那么简单的证明题/</div>
+      <div>分部积分</div>
+      <div>http://example.com/2024/01/12/分部积分/</div>
     </div>
     <div class="license-meta">
       
@@ -434,18 +469,12 @@ class="math inline">\(x=1\)</span>时，题目得证。</p>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/01/12/%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86/" title="分部积分">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">分部积分</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/01/12/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" title="测试文章">
-                        <span class="hidden-mobile">测试文章</span>
+                      <a href="/2024/01/12/%E4%B8%80%E9%81%93%E4%B8%8D%E9%82%A3%E4%B9%88%E7%AE%80%E5%8D%95%E7%9A%84%E8%AF%81%E6%98%8E%E9%A2%98/" title="一道不那么简单的证明题">
+                        <span class="hidden-mobile">一道不那么简单的证明题</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
